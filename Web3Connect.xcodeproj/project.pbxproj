@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D646D8E22ABF58A2008A85AC /* WalletConnect in Frameworks */ = {isa = PBXBuildFile; productRef = D646D8E12ABF58A2008A85AC /* WalletConnect */; };
+		D646D8E42ABF58A2008A85AC /* WalletConnectAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D646D8E32ABF58A2008A85AC /* WalletConnectAuth */; };
+		D646D8E62ABF58A2008A85AC /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = D646D8E52ABF58A2008A85AC /* WalletConnectPairing */; };
+		D646D8E92ABF58C2008A85AC /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = D646D8E82ABF58C2008A85AC /* web3swift */; };
+		D646D8ED2ABF5939008A85AC /* WalletConnectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8EC2ABF5939008A85AC /* WalletConnectService.swift */; };
+		D646D8EF2ABF5BCF008A85AC /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8EE2ABF5BCF008A85AC /* RequestHandler.swift */; };
+		D646D8F22ABF5E56008A85AC /* Request+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8F12ABF5E56008A85AC /* Request+Extension.swift */; };
+		D646D8F52ABF5EAB008A85AC /* EthSendTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8F42ABF5EAB008A85AC /* EthSendTransaction.swift */; };
+		D646D8F82ABF65AC008A85AC /* Web3SocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8F72ABF65AC008A85AC /* Web3SocketFactory.swift */; };
+		D646D8FB2ABF65D5008A85AC /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8FA2ABF65D5008A85AC /* WebSocketClient.swift */; };
+		D646D8FD2ABF6615008A85AC /* WebSocketClientInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D8FC2ABF6615008A85AC /* WebSocketClientInterface.swift */; };
+		D646D9002ABF67AF008A85AC /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = D646D8FF2ABF67AF008A85AC /* CodeScanner */; };
+		D646D9022ABF67CD008A85AC /* QRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9012ABF67CD008A85AC /* QRCodeScanner.swift */; };
+		D646D9062ABF6835008A85AC /* QRCodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9052ABF6835008A85AC /* QRCodeScannerViewModel.swift */; };
+		D646D9092ABF6C0F008A85AC /* WalletConnectRequestListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9082ABF6C0F008A85AC /* WalletConnectRequestListener.swift */; };
+		D646D90B2ABF6C2D008A85AC /* WalletConnectSesssionProposalListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D90A2ABF6C2D008A85AC /* WalletConnectSesssionProposalListener.swift */; };
+		D646D90E2ABF6E76008A85AC /* WCSessionProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D90D2ABF6E76008A85AC /* WCSessionProposal.swift */; };
+		D646D9112ABF6EE0008A85AC /* WCSessionProposalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9102ABF6EE0008A85AC /* WCSessionProposalViewModel.swift */; };
+		D646D9132ABF6FD5008A85AC /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9122ABF6FD5008A85AC /* Encodable.swift */; };
+		D646D9162ABF73DF008A85AC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = D646D9152ABF73DF008A85AC /* KeychainAccess */; };
+		D646D9182ABF740F008A85AC /* KeystoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9172ABF740F008A85AC /* KeystoreManager.swift */; };
+		D646D91A2ABF775D008A85AC /* TransactionRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D9192ABF775D008A85AC /* TransactionRequestViewModel.swift */; };
+		D646D91C2ABF78DE008A85AC /* EthereumTransaction+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D91B2ABF78DE008A85AC /* EthereumTransaction+Extension.swift */; };
+		D646D91E2ABF7D2A008A85AC /* TransactionExecutionRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D646D91D2ABF7D2A008A85AC /* TransactionExecutionRequestView.swift */; };
+		D646D9252ABF8084008A85AC /* .walletConnectProjectId in Resources */ = {isa = PBXBuildFile; fileRef = D646D9242ABF8084008A85AC /* .walletConnectProjectId */; };
+		D6C87DF92ABF51E70083C9D2 /* Web3ConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C87DF82ABF51E70083C9D2 /* Web3ConnectApp.swift */; };
+		D6C87DFB2ABF51E70083C9D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C87DFA2ABF51E70083C9D2 /* ContentView.swift */; };
+		D6C87DFD2ABF51E90083C9D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C87DFC2ABF51E90083C9D2 /* Assets.xcassets */; };
+		D6C87E002ABF51E90083C9D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C87DFF2ABF51E90083C9D2 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D646D8EC2ABF5939008A85AC /* WalletConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectService.swift; sourceTree = "<group>"; };
+		D646D8EE2ABF5BCF008A85AC /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		D646D8F12ABF5E56008A85AC /* Request+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Extension.swift"; sourceTree = "<group>"; };
+		D646D8F42ABF5EAB008A85AC /* EthSendTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthSendTransaction.swift; sourceTree = "<group>"; };
+		D646D8F72ABF65AC008A85AC /* Web3SocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3SocketFactory.swift; sourceTree = "<group>"; };
+		D646D8FA2ABF65D5008A85AC /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		D646D8FC2ABF6615008A85AC /* WebSocketClientInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClientInterface.swift; sourceTree = "<group>"; };
+		D646D9012ABF67CD008A85AC /* QRCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanner.swift; sourceTree = "<group>"; };
+		D646D9052ABF6835008A85AC /* QRCodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewModel.swift; sourceTree = "<group>"; };
+		D646D9082ABF6C0F008A85AC /* WalletConnectRequestListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectRequestListener.swift; sourceTree = "<group>"; };
+		D646D90A2ABF6C2D008A85AC /* WalletConnectSesssionProposalListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectSesssionProposalListener.swift; sourceTree = "<group>"; };
+		D646D90D2ABF6E76008A85AC /* WCSessionProposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionProposal.swift; sourceTree = "<group>"; };
+		D646D9102ABF6EE0008A85AC /* WCSessionProposalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCSessionProposalViewModel.swift; sourceTree = "<group>"; };
+		D646D9122ABF6FD5008A85AC /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		D646D9172ABF740F008A85AC /* KeystoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreManager.swift; sourceTree = "<group>"; };
+		D646D9192ABF775D008A85AC /* TransactionRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRequestViewModel.swift; sourceTree = "<group>"; };
+		D646D91B2ABF78DE008A85AC /* EthereumTransaction+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EthereumTransaction+Extension.swift"; sourceTree = "<group>"; };
+		D646D91D2ABF7D2A008A85AC /* TransactionExecutionRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionExecutionRequestView.swift; sourceTree = "<group>"; };
+		D646D9242ABF8084008A85AC /* .walletConnectProjectId */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .walletConnectProjectId; sourceTree = "<group>"; };
+		D6C87DF52ABF51E70083C9D2 /* Web3Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Web3Connect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C87DF82ABF51E70083C9D2 /* Web3ConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ConnectApp.swift; sourceTree = "<group>"; };
+		D6C87DFA2ABF51E70083C9D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6C87DFC2ABF51E90083C9D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6C87DFF2ABF51E90083C9D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C87DF22ABF51E70083C9D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D646D8E42ABF58A2008A85AC /* WalletConnectAuth in Frameworks */,
+				D646D8E62ABF58A2008A85AC /* WalletConnectPairing in Frameworks */,
+				D646D9162ABF73DF008A85AC /* KeychainAccess in Frameworks */,
+				D646D8E22ABF58A2008A85AC /* WalletConnect in Frameworks */,
+				D646D8E92ABF58C2008A85AC /* web3swift in Frameworks */,
+				D646D9002ABF67AF008A85AC /* CodeScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D646D8EA2ABF591B008A85AC /* WalletConnect */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9072ABF6BFB008A85AC /* Listeners */,
+				D646D8F62ABF6592008A85AC /* WebSocket */,
+				D646D8EC2ABF5939008A85AC /* WalletConnectService.swift */,
+				D646D8EE2ABF5BCF008A85AC /* RequestHandler.swift */,
+			);
+			path = WalletConnect;
+			sourceTree = "<group>";
+		};
+		D646D8F02ABF5E44008A85AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D646D8F12ABF5E56008A85AC /* Request+Extension.swift */,
+				D646D9122ABF6FD5008A85AC /* Encodable.swift */,
+				D646D91B2ABF78DE008A85AC /* EthereumTransaction+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D646D8F32ABF5E99008A85AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D646D8F42ABF5EAB008A85AC /* EthSendTransaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D646D8F62ABF6592008A85AC /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D646D8F72ABF65AC008A85AC /* Web3SocketFactory.swift */,
+				D646D8FA2ABF65D5008A85AC /* WebSocketClient.swift */,
+				D646D8FC2ABF6615008A85AC /* WebSocketClientInterface.swift */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		D646D9032ABF6819008A85AC /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				D646D90C2ABF6E62008A85AC /* WalletConnect */,
+				D646D9042ABF6822008A85AC /* ViewModels */,
+				D646D9012ABF67CD008A85AC /* QRCodeScanner.swift */,
+				D646D91D2ABF7D2A008A85AC /* TransactionExecutionRequestView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		D646D9042ABF6822008A85AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9052ABF6835008A85AC /* QRCodeScannerViewModel.swift */,
+				D646D9192ABF775D008A85AC /* TransactionRequestViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D646D9072ABF6BFB008A85AC /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9082ABF6C0F008A85AC /* WalletConnectRequestListener.swift */,
+				D646D90A2ABF6C2D008A85AC /* WalletConnectSesssionProposalListener.swift */,
+			);
+			path = Listeners;
+			sourceTree = "<group>";
+		};
+		D646D90C2ABF6E62008A85AC /* WalletConnect */ = {
+			isa = PBXGroup;
+			children = (
+				D646D90F2ABF6ECE008A85AC /* ViewModels */,
+				D646D90D2ABF6E76008A85AC /* WCSessionProposal.swift */,
+			);
+			path = WalletConnect;
+			sourceTree = "<group>";
+		};
+		D646D90F2ABF6ECE008A85AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9102ABF6EE0008A85AC /* WCSessionProposalViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D646D9212ABF7FE5008A85AC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9242ABF8084008A85AC /* .walletConnectProjectId */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D6C87DEC2ABF51E70083C9D2 = {
+			isa = PBXGroup;
+			children = (
+				D6C87DF72ABF51E70083C9D2 /* Web3Connect */,
+				D6C87DF62ABF51E70083C9D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C87DF62ABF51E70083C9D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C87DF52ABF51E70083C9D2 /* Web3Connect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C87DF72ABF51E70083C9D2 /* Web3Connect */ = {
+			isa = PBXGroup;
+			children = (
+				D646D9212ABF7FE5008A85AC /* SupportingFiles */,
+				D646D9032ABF6819008A85AC /* Content */,
+				D646D8F32ABF5E99008A85AC /* Models */,
+				D646D8F02ABF5E44008A85AC /* Extensions */,
+				D646D8EA2ABF591B008A85AC /* WalletConnect */,
+				D6C87DF82ABF51E70083C9D2 /* Web3ConnectApp.swift */,
+				D6C87DFA2ABF51E70083C9D2 /* ContentView.swift */,
+				D6C87DFC2ABF51E90083C9D2 /* Assets.xcassets */,
+				D6C87DFE2ABF51E90083C9D2 /* Preview Content */,
+				D646D9172ABF740F008A85AC /* KeystoreManager.swift */,
+			);
+			path = Web3Connect;
+			sourceTree = "<group>";
+		};
+		D6C87DFE2ABF51E90083C9D2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D6C87DFF2ABF51E90083C9D2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6C87DF42ABF51E70083C9D2 /* Web3Connect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C87E032ABF51E90083C9D2 /* Build configuration list for PBXNativeTarget "Web3Connect" */;
+			buildPhases = (
+				D6C87DF12ABF51E70083C9D2 /* Sources */,
+				D6C87DF22ABF51E70083C9D2 /* Frameworks */,
+				D6C87DF32ABF51E70083C9D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Web3Connect;
+			packageProductDependencies = (
+				D646D8E12ABF58A2008A85AC /* WalletConnect */,
+				D646D8E32ABF58A2008A85AC /* WalletConnectAuth */,
+				D646D8E52ABF58A2008A85AC /* WalletConnectPairing */,
+				D646D8E82ABF58C2008A85AC /* web3swift */,
+				D646D8FF2ABF67AF008A85AC /* CodeScanner */,
+				D646D9152ABF73DF008A85AC /* KeychainAccess */,
+			);
+			productName = Web3Connect;
+			productReference = D6C87DF52ABF51E70083C9D2 /* Web3Connect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C87DED2ABF51E70083C9D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D6C87DF42ABF51E70083C9D2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D6C87DF02ABF51E70083C9D2 /* Build configuration list for PBXProject "Web3Connect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6C87DEC2ABF51E70083C9D2;
+			packageReferences = (
+				D646D8E02ABF58A2008A85AC /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
+				D646D8E72ABF58C2008A85AC /* XCRemoteSwiftPackageReference "web3swift" */,
+				D646D8FE2ABF67AF008A85AC /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				D646D9142ABF73DF008A85AC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = D6C87DF62ABF51E70083C9D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C87DF42ABF51E70083C9D2 /* Web3Connect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6C87DF32ABF51E70083C9D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D646D9252ABF8084008A85AC /* .walletConnectProjectId in Resources */,
+				D6C87E002ABF51E90083C9D2 /* Preview Assets.xcassets in Resources */,
+				D6C87DFD2ABF51E90083C9D2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C87DF12ABF51E70083C9D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D646D8F52ABF5EAB008A85AC /* EthSendTransaction.swift in Sources */,
+				D6C87DFB2ABF51E70083C9D2 /* ContentView.swift in Sources */,
+				D6C87DF92ABF51E70083C9D2 /* Web3ConnectApp.swift in Sources */,
+				D646D9092ABF6C0F008A85AC /* WalletConnectRequestListener.swift in Sources */,
+				D646D91C2ABF78DE008A85AC /* EthereumTransaction+Extension.swift in Sources */,
+				D646D8EF2ABF5BCF008A85AC /* RequestHandler.swift in Sources */,
+				D646D91E2ABF7D2A008A85AC /* TransactionExecutionRequestView.swift in Sources */,
+				D646D8ED2ABF5939008A85AC /* WalletConnectService.swift in Sources */,
+				D646D8FB2ABF65D5008A85AC /* WebSocketClient.swift in Sources */,
+				D646D9132ABF6FD5008A85AC /* Encodable.swift in Sources */,
+				D646D9022ABF67CD008A85AC /* QRCodeScanner.swift in Sources */,
+				D646D8FD2ABF6615008A85AC /* WebSocketClientInterface.swift in Sources */,
+				D646D90B2ABF6C2D008A85AC /* WalletConnectSesssionProposalListener.swift in Sources */,
+				D646D9182ABF740F008A85AC /* KeystoreManager.swift in Sources */,
+				D646D9112ABF6EE0008A85AC /* WCSessionProposalViewModel.swift in Sources */,
+				D646D91A2ABF775D008A85AC /* TransactionRequestViewModel.swift in Sources */,
+				D646D8F22ABF5E56008A85AC /* Request+Extension.swift in Sources */,
+				D646D8F82ABF65AC008A85AC /* Web3SocketFactory.swift in Sources */,
+				D646D90E2ABF6E76008A85AC /* WCSessionProposal.swift in Sources */,
+				D646D9062ABF6835008A85AC /* QRCodeScannerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D6C87E012ABF51E90083C9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6C87E022ABF51E90083C9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6C87E042ABF51E90083C9D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Web3Connect/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to scan QR codes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = web3.connect.sample.Web3Connect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6C87E052ABF51E90083C9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Web3Connect/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using camera to scan QR codes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = web3.connect.sample.Web3Connect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C87DF02ABF51E70083C9D2 /* Build configuration list for PBXProject "Web3Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C87E012ABF51E90083C9D2 /* Debug */,
+				D6C87E022ABF51E90083C9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C87E032ABF51E90083C9D2 /* Build configuration list for PBXNativeTarget "Web3Connect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C87E042ABF51E90083C9D2 /* Debug */,
+				D6C87E052ABF51E90083C9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D646D8E02ABF58A2008A85AC /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwiftV2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		D646D8E72ABF58C2008A85AC /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		D646D8FE2ABF67AF008A85AC /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D646D9142ABF73DF008A85AC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D646D8E12ABF58A2008A85AC /* WalletConnect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D8E02ABF58A2008A85AC /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnect;
+		};
+		D646D8E32ABF58A2008A85AC /* WalletConnectAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D8E02ABF58A2008A85AC /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectAuth;
+		};
+		D646D8E52ABF58A2008A85AC /* WalletConnectPairing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D8E02ABF58A2008A85AC /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectPairing;
+		};
+		D646D8E82ABF58C2008A85AC /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D8E72ABF58C2008A85AC /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+		D646D8FF2ABF67AF008A85AC /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D8FE2ABF67AF008A85AC /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		D646D9152ABF73DF008A85AC /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D646D9142ABF73DF008A85AC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D6C87DED2ABF51E70083C9D2 /* Project object */;
+}
